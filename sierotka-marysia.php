@@ -27,7 +27,7 @@ along with Sierotka Marysia. If not, see https://www.gnu.org/licenses/gpl-3.0.en
  * Domain Path:       /languages
  */
 
-if ( !function_exists(sierotka_marysia_orphans_filter_handler) ) {
+if ( !function_exists("sierotka_marysia_orphans_filter_handler") ) {
   function sierotka_marysia_orphans_filter_handler( $data , $postarr ) {
     $data['post_content'] = preg_replace("/( [a-zA-Z0-9]) /", "$1&nbsp;", $data['post_content']);
     $data['post_content'] = preg_replace("/(&nbsp;[a-zA-Z0-9]) /", "$1&nbsp;", $data['post_content']);
